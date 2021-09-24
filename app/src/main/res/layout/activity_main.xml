@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/IMCc3"
     tools:context=".MainActivity">
 
 
@@ -85,11 +86,11 @@
             app:layout_constraintTop_toBottomOf="@+id/eTAltura" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btAceptar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Button"
+            android:text="Aceptar"
             app:layout_constraintTop_toBottomOf="@+id/eTResultado" />
 
         <EditText
@@ -111,6 +112,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_begin="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="56dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="10dp"
+            android:tint="@color/purple_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:srcCompat="@android:drawable/ic_dialog_alert" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
